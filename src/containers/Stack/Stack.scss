@@ -1,0 +1,25 @@
+@import "../../styles/index";
+
+.stack {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__single-item {
+    align-items: center;
+    background-color: var(--color--main-black);
+    display: flex;
+    flex-direction: column;
+    height: 14rem;
+    justify-content: space-between;
+    padding: spacing("3xl") 0;
+    margin-bottom: 1rem;
+    width: 19.375rem;
+  }
+}

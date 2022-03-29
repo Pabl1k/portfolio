@@ -1,0 +1,80 @@
+@import "../../styles/index";
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__single-item {
+    background-color: var(--color--main-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 29.3rem;
+    padding-bottom: spacing("xs");
+
+    img {
+      width: 29.3rem;
+      height: 16rem;
+      transition: 0.3s all ease-in-out;
+
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+
+    &.marginTop {
+      margin-top: spacing("md");
+    }
+
+    &:hover {
+      .projects__label {
+        display: flex;
+      }
+    }
+  }
+
+  &__label {
+    position: absolute;
+    color: var(--color--black);
+    height: 2rem;
+    padding: spacing("5xs") spacing("2xs");
+    background-color: var(--color--gold);
+    display: none;
+    justify-content: center;
+    margin-top: -3rem;
+  }
+
+  &__triangle {
+    width: 15px;
+    height: 15px;
+    margin-top: 18px;
+    background-color: var(--color--gold);
+    position: absolute;
+    transform: rotate(-45deg);
+  }
+
+  &__title {
+    margin-top: spacing("xs");
+  }
+
+  &__description {
+    color: var(--color--grey-text);
+    margin-top: spacing("2xs");
+    text-align: center;
+    max-width: 20em;
+  }
+
+  &__github {
+    display: flex;
+    justify-content: center;
+    color: var(--color--grey-text);
+    margin-top: spacing("xs");
+    text-decoration: none;
+
+    &:hover {
+      color: var(--color--white);
+    }
+  }
+}

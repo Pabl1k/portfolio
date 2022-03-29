@@ -1,0 +1,16 @@
+@import "../../styles/index";
+
+.download-button {
+  align-items: center;
+  background-color: var(--color--gold);
+  color: var(--color--white);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  height: 2.5rem;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 0 spacing("3xl");
+  text-decoration: none;
+}

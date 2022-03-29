@@ -1,0 +1,26 @@
+@import "../../styles/index";
+
+.percentage-scale {
+  &__title {
+    color: var(--color--grey-text);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__container {
+    border: 1px solid var(--color--gold);
+    border-radius: spacing("xs");
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: spacing("3xs");
+    margin-top: spacing("5xs");
+    padding: 2px;
+  }
+
+  &__line {
+    background: var(--color--gold);
+    border-radius: spacing("xs");
+    height: 100%;
+  }
+}

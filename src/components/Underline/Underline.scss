@@ -1,0 +1,11 @@
+@import "../../styles/index";
+
+.underline {
+  border-bottom: 1.5px solid var(--color--light-grey);
+  width: 100%;
+  margin: spacing("lg") 0;
+
+  &.no-margin {
+    margin: 0;
+  }
+}

@@ -1,0 +1,17 @@
+.right-container {
+  background-color: var(--color--main-black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 6.6875rem;
+  //width: 7%;
+
+  &__navigation-container {
+    transform:translateY(40%);
+    position: fixed;
+    height: calc(6 * 3rem + 2rem * 4 + 1rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

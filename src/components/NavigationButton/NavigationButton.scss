@@ -1,0 +1,49 @@
+@import "../../styles/index";
+
+.navigation-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    color: var(--color--black);
+    height: 2rem;
+    padding: spacing("5xs") spacing("2xs");
+    background-color: var(--color--white);
+    display: flex;
+    justify-content: center;
+    margin-bottom: spacing("xs");
+  }
+
+  &__triangle {
+    width: 15px;
+    height: 15px;
+    margin-top: 18px;
+    background-color: var(--color--white);
+    position: absolute;
+    transform: rotate(-45deg);
+  }
+
+  &__button {
+    background-color: var(--color--light-grey);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+
+    &:hover {
+      filter: brightness(85%);
+      padding-bottom: 2px;
+    }
+
+    &.active {
+      background-color: var(--color--gold);
+      padding-bottom: 0;
+      filter: none;
+      cursor: default;
+    }
+  }
+}

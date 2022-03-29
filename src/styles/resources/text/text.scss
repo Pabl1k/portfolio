@@ -1,0 +1,22 @@
+.portfolio-text-small {
+  font-weight: 400;
+  font-size: 0.9375rem; // 15px
+  line-height: 24px;
+  font-feature-settings: "calt" off, "kern" off;
+}
+
+.portfolio-text-medium {
+  font-weight: 500;
+  font-size: 1.125rem; // 18px
+  line-height: 123.6%;
+  text-transform: capitalize;
+}
+
+.portfolio-disable-text-selection {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}

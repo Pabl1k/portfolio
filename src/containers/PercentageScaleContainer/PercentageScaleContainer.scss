@@ -1,0 +1,14 @@
+@import "../../styles/index";
+
+.percentage-scale-container {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin-bottom: spacing('5xs');
+  }
+
+  &__single-item {
+    margin-top: spacing('3xs');
+  }
+}

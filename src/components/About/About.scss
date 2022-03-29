@@ -1,0 +1,31 @@
+@import "../../styles/index";
+
+.about {
+  background: url("../../assets/images/aboutBg.png") no-repeat;
+  background-size: 100%;
+  padding-left: 3.75rem;
+  padding-bottom: 5rem;
+
+  &__name-container {
+    margin-top: 5.8rem;
+    max-width: 31.25rem;
+  }
+
+  &__text {
+    color: var(--color--white);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 123.6%;
+
+    &.gold {
+      color: var(--color--gold);
+    }
+  }
+
+  &__description {
+    color: var(--color--grey-text);
+    font-size: 16px;
+    margin-top: spacing("xs");
+    width: 25rem;
+  }
+}

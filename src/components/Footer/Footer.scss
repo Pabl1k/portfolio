@@ -1,0 +1,20 @@
+@import "../../styles/index";
+
+.footer {
+  align-items: center;
+  background-color: var(--color--main-black);
+  color: var(--color--light-grey);
+  display: flex;
+  justify-content: center;
+  height: 3.75rem;
+  margin-top: spacing("3xl");
+
+  &__full-name {
+    cursor: pointer;
+
+    &:hover {
+      color: #3535ff;
+      text-decoration: underline;
+    }
+  }
+}

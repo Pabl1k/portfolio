@@ -1,0 +1,28 @@
+@import "../../styles/index";
+
+.information {
+  width: 100%;
+
+  &__single-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: spacing("3xs");
+
+    &:first-child {
+      margin: 0;
+    }
+  }
+
+  &__text {
+    color: var(--color--white);
+    padding: 0 spacing("5xs");
+
+    &.key {
+      background-color: var(--color--gold);
+    }
+
+    &.available {
+      color: var(--color--green);
+    }
+  }
+}

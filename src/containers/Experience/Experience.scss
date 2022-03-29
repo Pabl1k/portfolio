@@ -1,0 +1,42 @@
+@import "../../styles/index";
+
+.work-history {
+  background-color: var(--color--main-black);
+  display: flex;
+  flex-direction: column;
+  padding: spacing("2xl");
+
+  &__single-job {
+    display: flex;
+    justify-content: space-between;
+    padding-top: spacing("md");
+    padding-bottom: spacing("md");
+    border-bottom: 1.5px solid var(--color--light-grey);
+
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+
+  &__position-date {
+    display: flex;
+    flex-direction: column;
+    width: 17.5rem;
+  }
+
+  &__period {
+    background-color: var(--color--gold);
+    padding: spacing("5xs") spacing("4xs");
+    margin-top: spacing("lg");
+    width: fit-content;
+  }
+
+  &__description {
+    color: var(--color--grey-text);
+    max-width: 33.5rem;
+  }
+}

@@ -1,0 +1,36 @@
+@import "../../styles/index";
+
+.extra-skills {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    padding-bottom: spacing("xs");
+  }
+
+  &__inline {
+    display: flex;
+    margin-bottom: spacing("xs");
+
+    &.second {
+      width: 10rem;
+    }
+
+    &.last-item {
+      margin-bottom: 0;
+    }
+  }
+
+  &__icon {
+    padding-top: spacing("5xs");
+  }
+
+  &__items {
+    color: var(--color--grey-text);
+    font-size: 14px;
+    margin-left: spacing("xs");
+    line-height: spacing("md");
+    text-transform: capitalize;
+    font-feature-settings: "calt" off, "kern" off;
+  }
+}

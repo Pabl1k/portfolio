@@ -1,0 +1,33 @@
+@import "../../styles/index";
+
+.profile {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: spacing("3xl");
+
+  &__img {
+    width: 9.3rem;
+    height: 9.3rem;
+    border-radius: 50%;
+  }
+
+  &__full-name {
+    display: flex;
+    align-items: center;
+    margin-top: spacing("xl");
+  }
+
+  &__position {
+    color: var(--color--grey-text);
+    margin-top: spacing("xs");
+   }
+
+  &__links-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: spacing("xs");
+    min-width: calc((var(--size--small-icon) * 4) + 0.5rem * 4);
+  }
+}

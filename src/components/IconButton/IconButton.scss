@@ -1,0 +1,14 @@
+.circle-with-icon {
+  background-color: var(--color--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--size--small-icon);
+  height: var(--size--small-icon);
+  border-radius: 50%;
+
+  &:hover {
+    filter: brightness(85%);
+    padding-bottom: 2px;
+  }
+}

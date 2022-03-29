@@ -1,0 +1,15 @@
+@import "../../styles/index";
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color--black);
+  //padding: 0 2rem;
+  //width: 100vw;
+
+  @include if-tablet {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
