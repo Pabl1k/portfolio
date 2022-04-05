@@ -4,12 +4,20 @@
   display: flex;
   justify-content: center;
   background-color: var(--color--black);
-  //padding: 0 2rem;
-  //width: 100vw;
 
-  @include if-tablet {
-    display: flex;
-    justify-content: center;
+  @include if-tablet-mini {
     width: 100%;
+  }
+
+  @include if-mobile {
+    width: 100%;
+  }
+
+  &__left-container {
+    @include if-tablet-mini {
+      position: absolute;
+      background-color: rgba(#000, 0.7);
+      width: 100%;
+    }
   }
 }

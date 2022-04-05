@@ -118,10 +118,10 @@ export const state = {
   ] as ProjectsStateType[],
   rightContainer: [
     { name: "home", Y: 0 },
-    { name: "stack", Y: 560 },
-    { name: "work", Y: 1298 },
-    { name: "education", Y: 1959 },
-    { name: "projects", Y: 2527 },
-    { name: "feedback", Y: 4074 },
+    { name: "stack", Y: 555 },
+    { name: "work", Y: 1280 },
+    { name: "education", Y: 1924 },
+    { name: "projects", Y: 2468 },
+    { name: "feedback", Y: 4009 },
   ] as RightContainerStateType[],
 };

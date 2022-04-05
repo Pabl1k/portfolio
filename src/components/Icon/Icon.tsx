@@ -2,6 +2,7 @@ import { FC } from "react";
 import { ReactSVG } from "react-svg";
 
 export type IconName =
+  | "cross"
   | "css"
   | "download"
   | "education"
@@ -14,6 +15,7 @@ export type IconName =
   | "html"
   | "js"
   | "linkedin"
+  | "menu"
   | "projects"
   | "react"
   | "redux"

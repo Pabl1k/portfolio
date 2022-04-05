@@ -6,7 +6,10 @@
   align-items: center;
   margin-top: 6rem;
   margin-bottom: spacing("2xl");
-  width: var(--size--middle-container-width);
+
+  @include if-mobile {
+    margin-top: spacing("4xl");
+  }
 
   &__title {
     color: var(--color--white);
@@ -20,5 +23,9 @@
     color: var(--color--grey-text);
     text-align: center;
     width: 25rem;
+
+    @include if-mobile {
+      width: 20rem;
+    }
   }
 }

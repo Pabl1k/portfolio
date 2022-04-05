@@ -5,6 +5,14 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
+  @include if-tablet-mini {
+    justify-content: center;
+  }
+
+  @include if-mobile {
+    justify-content: center;
+  }
+
   &__single-item {
     background-color: var(--color--main-black);
     display: flex;
@@ -22,6 +30,13 @@
       &:hover {
         transform: scale(1.03);
       }
+
+      @include if-tablet-mini {
+      }
+
+      @include if-mobile {
+        max-width: 20rem;
+      }
     }
 
     &.marginTop {
@@ -32,6 +47,13 @@
       .projects__label {
         display: flex;
       }
+    }
+
+    @include if-tablet-mini {
+    }
+
+      @include if-mobile {
+      max-width: 20rem;
     }
   }
 

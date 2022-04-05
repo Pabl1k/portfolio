@@ -7,9 +7,13 @@ import EmailPage from "../../assets/images/emailPage.png";
 import TodoList from "../../assets/images/todoList.png";
 import UserChat from "../../assets/images/userChat.png";
 import CardsLearning from "../../assets/images/cardsLearning.png";
+import { useMobileScreen, useTabletScreen } from "../../hooks/useMediaQuery";
 import "./Projects.scss";
 
 const Projects = () => {
+  const isMobile = useMobileScreen();
+  const isTablet = useTabletScreen();
+
   return (
     <>
       <BlockTitleWithDescription
@@ -20,7 +24,9 @@ const Projects = () => {
         {state.projects.map((state, i) => {
           return (
             <div
-              className={`projects__single-item ${i > 1 && "marginTop"}`}
+              className={`projects__single-item ${
+                (isMobile || isTablet) && i >= 1 && "marginTop"
+              } ${!isMobile && i > 1 && "marginTop"}`}
               key={i}
             >
               {state.label && (
@@ -52,7 +58,7 @@ const Projects = () => {
                 href={state.github}
                 target="_blank"
               >
-                  {strings.openGithub}
+                {strings.openGithub}
               </a>
             </div>
           );

@@ -6,9 +6,34 @@
   padding-left: 3.75rem;
   padding-bottom: 5rem;
 
+  @include if-mobile {
+    background: none;
+    padding: 0;
+  }
+
+  &__me-img-container {
+    display: flex;
+    justify-content: center;
+    margin-top: spacing("md");
+
+    img {
+      width: 20rem;
+      height: 20rem;
+    }
+  }
+
   &__name-container {
     margin-top: 5.8rem;
     max-width: 31.25rem;
+
+    @include if-tablet-mini {
+      margin-top: 3rem;
+      max-width: 25rem;
+    }
+
+    @include if-mobile {
+      margin-top: 2rem;
+    }
   }
 
   &__text {
@@ -20,6 +45,16 @@
     &.gold {
       color: var(--color--gold);
     }
+
+    @include if-tablet-mini {
+      font-size: 35px;
+    }
+
+    @include if-mobile {
+      text-align: center;
+      display: flow-root;
+      font-size: 60px;
+    }
   }
 
   &__description {
@@ -27,5 +62,17 @@
     font-size: 16px;
     margin-top: spacing("xs");
     width: 25rem;
+
+    @include if-tablet-mini {
+      font-size: 14px;
+      margin-top: spacing("3xs");
+      width: 20rem;
+    }
+
+    @include if-mobile {
+      text-align: center;
+      display: flow-root;
+      width: auto;
+    }
   }
 }

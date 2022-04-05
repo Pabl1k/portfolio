@@ -1,6 +1,6 @@
 @import "../../styles/index";
 
-.work-history {
+.experience {
   background-color: var(--color--main-black);
   display: flex;
   flex-direction: column;
@@ -20,12 +20,20 @@
       border-bottom: none;
       padding-bottom: 0;
     }
+
+    @include if-mobile {
+      flex-direction: column;
+    }
   }
 
   &__position-date {
     display: flex;
     flex-direction: column;
     width: 17.5rem;
+
+    @include if-tablet-mini {
+      width: 140px;
+    }
   }
 
   &__period {
@@ -33,10 +41,22 @@
     padding: spacing("5xs") spacing("4xs");
     margin-top: spacing("lg");
     width: fit-content;
+
+    @include if-tablet-mini {
+      width: 90px;
+    }
   }
 
   &__description {
     color: var(--color--grey-text);
     max-width: 33.5rem;
+
+    @include if-tablet-mini {
+      max-width: 30rem;
+    }
+
+    @include if-mobile {
+      margin-top: spacing("md");
+    }
   }
 }

@@ -9,6 +9,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @include if-mobile {
+      justify-content: center;
+    }
   }
 
   &__single-item {
@@ -21,5 +25,10 @@
     padding: spacing("3xl") 0;
     margin-bottom: 1rem;
     width: 19.375rem;
+
+    @include if-tablet-mini {
+      width: 21rem;
+
+    }
   }
 }

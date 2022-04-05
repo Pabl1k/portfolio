@@ -1,0 +1,17 @@
+.menu-button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: none;
+  border: none;
+
+  &.absolute {
+    position: absolute;
+    right: 5%;
+    top: 1%;
+  }
+
+  &:hover, :focus {
+    background: var(--color--grey)
+  }
+}

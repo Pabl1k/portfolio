@@ -5,10 +5,13 @@
   flex-direction: column;
   padding-top: spacing("lg");
   margin: 0 spacing("xl");
-  //max-width: 60%;
   max-width: var(--size--middle-container-width);
 
-  @include if-tablet {
+  @include if-tablet-mini {
     width: 90%;
+  }
+
+  @include if-mobile {
+    max-width: 90%;
   }
 }

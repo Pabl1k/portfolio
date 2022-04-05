@@ -13,17 +13,17 @@ const Experience: FC<Props> = ({ state, title, description }) => {
   return (
     <>
       <BlockTitleWithDescription title={title} description={description} />
-      <div className="work-history">
+      <div className="experience">
         {state.map((job, i) => {
           return (
-            <div className="work-history__single-job" key={i}>
-              <div className="work-history__position-date">
+            <div className="experience__single-job" key={i}>
+              <div className="experience__position-date">
                 <span className="portfolio-text-medium">{job.position}</span>
-                <div className="work-history__period">
+                <div className="experience__period">
                   <span>{job.period}</span>
                 </div>
               </div>
-              <div className="work-history__description">
+              <div className="experience__description">
                 <p>{job.description}</p>
                 {job.description2 && <p>{job.description2}</p>}
               </div>
