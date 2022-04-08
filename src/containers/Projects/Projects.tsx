@@ -1,5 +1,6 @@
 import React from "react";
 import BlockTitleWithDescription from "../../components/BlockTitleWithDescription/BlockTitleWithDescription";
+import { useMobileScreen, useTabletScreen } from "../../hooks/useMediaQuery";
 import { strings } from "../../utils/strings";
 import { state } from "../../utils/state";
 import Coingate from "../../assets/images/coingate.png";
@@ -7,7 +8,7 @@ import EmailPage from "../../assets/images/emailPage.png";
 import TodoList from "../../assets/images/todoList.png";
 import UserChat from "../../assets/images/userChat.png";
 import CardsLearning from "../../assets/images/cardsLearning.png";
-import { useMobileScreen, useTabletScreen } from "../../hooks/useMediaQuery";
+import ThisPortfolio from "../../assets/images/thisPortfolio.png";
 import "./Projects.scss";
 
 const Projects = () => {
@@ -42,7 +43,8 @@ const Projects = () => {
                     (state.img === "EmailPage" && EmailPage) ||
                     (state.img === "TodoList" && TodoList) ||
                     (state.img === "UserChat" && UserChat) ||
-                    (state.img === "CardsLearning" && CardsLearning)
+                    (state.img === "CardsLearning" && CardsLearning) ||
+                    (state.img === "ThisPortfolio" && ThisPortfolio)
                   }
                   alt={state.name}
                 />

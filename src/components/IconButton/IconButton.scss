@@ -1,3 +1,5 @@
+@import "../../styles/index";
+
 .circle-with-icon {
   background-color: var(--color--gold);
   display: flex;
@@ -9,6 +11,6 @@
 
   &:hover {
     filter: brightness(85%);
-    padding-bottom: 2px;
+    padding-bottom: spacing("6xs");
   }
 }

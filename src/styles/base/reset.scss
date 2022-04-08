@@ -6,8 +6,39 @@
   padding: 0;
 }
 
+* {
+  &::-moz-selection {
+    /* for Firefox */
+    background: #fdb301;
+    color: #000;
+  }
+
+  &::selection {
+    background: #fdb301;
+    color: #000;
+  }
+}
+
 body {
   overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    width: 1em;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #252627;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #fdb301;
+    border-radius: 100vw;
+    border: 0.3em solid #252627;
+
+    &:hover {
+      background-color: darken(#fdb301, 8%);
+    }
+  }
 }
 
 input::-webkit-outer-spin-button,

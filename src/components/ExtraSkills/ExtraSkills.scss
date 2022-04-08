@@ -27,7 +27,7 @@
 
   &__items {
     color: var(--color--grey-text);
-    font-size: 14px;
+    font-size: font-size("xs");
     margin-left: spacing("xs");
     line-height: spacing("md");
     text-transform: capitalize;

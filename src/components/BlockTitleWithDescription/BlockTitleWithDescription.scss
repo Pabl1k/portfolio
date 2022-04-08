@@ -14,7 +14,7 @@
   &__title {
     color: var(--color--white);
     font-weight: 700;
-    font-size: 32px;
+    font-size: font-size("md");
     line-height: 123.6%;
     margin-bottom: spacing("lg");
   }

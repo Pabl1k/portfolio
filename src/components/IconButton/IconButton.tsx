@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 import Icon, { IconName } from "../Icon/Icon";
-
 import "./IconButton.scss";
 
 type Props = {

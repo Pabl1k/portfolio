@@ -1,5 +1,5 @@
 import React from "react";
-import me from "../../assets/images/me.jpg";
+import me from "../../assets/images/me2.png";
 import { useMobileScreen, useTabletScreen } from "../../hooks/useMediaQuery";
 import { strings } from "../../utils/strings";
 import "./About.scss";

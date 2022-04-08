@@ -4,8 +4,7 @@
   background-color: var(--color--main-black);
   display: flex;
   flex-direction: column;
-  padding: 0 spacing("2xl") 0 spacing("2xl");
-  height: 95.5rem;
+  padding: 0 spacing("2xl") spacing("lg") spacing("2xl");
   max-width: 18.75rem;
 
   @include if-mobile {

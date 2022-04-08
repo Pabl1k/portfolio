@@ -16,9 +16,9 @@
   }
 
   &__triangle {
-    width: 15px;
-    height: 15px;
-    margin-top: 18px;
+    width: 1rem;
+    height: 1rem;
+    margin-top: 1.125rem;
     background-color: var(--color--white);
     position: absolute;
     transform: rotate(-45deg);
@@ -36,7 +36,7 @@
 
     &:hover {
       filter: brightness(85%);
-      padding-bottom: 2px;
+      padding-bottom: spacing("6xs");
     }
 
     &.active {

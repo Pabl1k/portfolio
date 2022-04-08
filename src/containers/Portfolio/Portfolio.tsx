@@ -1,8 +1,8 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import LeftContainer from "../LeftContainer/LeftContainer";
 import MiddleContainer from "../MiddleContainer/MiddleContainer";
 import RightContainer from "../RightContainer/RightContainer";
-import {useTabletScreen} from "../../hooks/useMediaQuery";
+import { useTabletScreen } from "../../hooks/useMediaQuery";
 import "./Portfolio.scss";
 
 const Portfolio = () => {

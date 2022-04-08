@@ -7,7 +7,7 @@ import {
   ScaleStateType,
   StackStateType,
 } from "../types/state";
-import {strings} from "./strings";
+import { strings } from "./strings";
 
 export const state = {
   profile: [
@@ -73,6 +73,11 @@ export const state = {
       description: strings.courseDescription,
     },
     {
+      position: strings.university,
+      period: strings.universityPeriod,
+      description: strings.universityDescription,
+    },
+    {
       position: strings.highSchool,
       period: strings.highSchoolPeriod,
       description: strings.highSchoolDescription,
@@ -114,6 +119,13 @@ export const state = {
       description: strings.learnCardsDescription,
       label: strings.teamWork,
       github: "https://github.com/Pabl1k/cardsLearning",
+    },
+    {
+      name: strings.thisPortfolio,
+      url: "",
+      img: "ThisPortfolio",
+      description: strings.thisPortfolioDescription,
+      github: "https://github.com/Pabl1k/portfolio",
     },
   ] as ProjectsStateType[],
   rightContainer: [

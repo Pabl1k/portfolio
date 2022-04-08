@@ -30,7 +30,13 @@ export type ExperienceStateType = {
 export type ProjectsStateType = {
   name: string;
   url: `https://${string}`;
-  img: "Coingate" | "EmailPage" | "TodoList" | "UserChat" | "CardsLearning";
+  img:
+    | "Coingate"
+    | "EmailPage"
+    | "TodoList"
+    | "UserChat"
+    | "CardsLearning"
+    | "ThisPortfolio";
   description: string;
   label?: string;
   github: `https://${string}`;

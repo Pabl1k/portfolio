@@ -1,7 +1,7 @@
 import React from "react";
+import { strings } from "../../utils/strings";
+import { useScrollTo } from "../../hooks/useScrollTo";
 import "./Footer.scss";
-import {strings} from "../../utils/strings";
-import {useScrollTo} from "../../hooks/useScrollTo";
 
 const Footer = () => {
   function GoToTop() {
@@ -14,7 +14,7 @@ const Footer = () => {
         <span className="footer__full-name" onClick={GoToTop}>
           {strings.fullName}
         </span>
-        , {strings.year}
+        {strings.year}
       </p>
     </div>
   );

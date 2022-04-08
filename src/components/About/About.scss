@@ -7,7 +7,7 @@
   padding-bottom: 5rem;
 
   @include if-mobile {
-    background: none;
+    background: var(--color--main-black);
     padding: 0;
   }
 
@@ -18,7 +18,7 @@
 
     img {
       width: 20rem;
-      height: 20rem;
+      height: 25rem;
     }
   }
 
@@ -39,7 +39,7 @@
   &__text {
     color: var(--color--white);
     font-weight: 700;
-    font-size: 48px;
+    font-size: font-size('xl');
     line-height: 123.6%;
 
     &.gold {
@@ -47,24 +47,24 @@
     }
 
     @include if-tablet-mini {
-      font-size: 35px;
+      font-size: font-size("lg");
     }
 
     @include if-mobile {
       text-align: center;
       display: flow-root;
-      font-size: 60px;
+      font-size: font-size("2xl");
     }
   }
 
   &__description {
     color: var(--color--grey-text);
-    font-size: 16px;
+    font-size: font-size("sm");
     margin-top: spacing("xs");
     width: 25rem;
 
     @include if-tablet-mini {
-      font-size: 14px;
+      font-size: font-size("xs");
       margin-top: spacing("3xs");
       width: 20rem;
     }

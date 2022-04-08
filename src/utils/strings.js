@@ -36,7 +36,7 @@ export const strings = {
     "Technologies that I have learned and got the experience which helps me to do my best at work.",
   education: "Education",
   educationDescription:
-    "A brief description of a small educational process in my life.",
+    "A brief description of the non-rich education experience of my life",
   workHistory: "Work History",
   workHistoryDescription:
     "A brief description of what I learned and what experience I received during the practice and work as a Front-end Developer",
@@ -54,12 +54,15 @@ export const strings = {
   coursePeriod: "2020-12 - 2021-08",
   courseDescription:
     "In this course, I took the first steps of creating SPA using React and Redux. Learned the main basics which help in the development process such as NPM, YARN, GIT, unit tests, storybook. Had the first experience using basic React hooks in the educational project.",
+  university: "NORTHUMBRIA university Newcastle, UK",
+  universityPeriod: "2019-09 - 2020-01",
+  universityDescription: "Unsuccessful experience in education to become a computer scientist. But successful experience with an understanding of what I would love to do in the future.",
   highSchool: "High School Diploma at Visaginas Atgimimo Gymnasium",
   highSchoolPeriod: "2003-09 - 2015-06",
   highSchoolDescription:
     "The high school which I have graduated in my birthplace Visaginas, Lithuania.",
   footer: "Portfolio created by",
-  year: "2022",
+  year: ", 2022",
   feedback: "Feedback",
   feedbackDescription:
     "Some of the last feedback that I received from colleagues with who I had a nice experience working together.",
@@ -80,5 +83,7 @@ export const strings = {
   learnCardsDescription:
     "Stack: React, Redux, React-Redux, React-Router-Dom, Redux-Thunk, Axios, Formik, SASS, Classnames, Material-UI",
   teamWork: "Team work",
-  openGithub: "Open on GitHub"
+  openGithub: "Open on GitHub",
+  thisPortfolio: "This Portfolio",
+  thisPortfolioDescription: "Stack: React, React-SVG, SCSS",
 };

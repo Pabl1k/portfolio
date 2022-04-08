@@ -3,7 +3,7 @@ import Profile from "../../components/Profile/Profile";
 import Information from "../../components/Information/Information";
 import PercentageScaleContainer from "../PercentageScaleContainer/PercentageScaleContainer";
 import ExtraSkills from "../../components/ExtraSkills/ExtraSkills";
-import DownloadButton from "../../components/DownloadButton/DownloadButton";
+import CVButton from "../../components/CVButton/CVButton";
 import MenuButton from "../../components/MenuButton/MenuButton";
 import {useTabletScreen} from "../../hooks/useMediaQuery";
 import {strings} from "../../utils/strings";
@@ -31,7 +31,7 @@ const LeftContainer: FC<Props> = ({ onCrossClick }) => {
         state={state.skills}
       />
       <ExtraSkills />
-      <DownloadButton />
+      <CVButton />
     </div>
   );
 };
