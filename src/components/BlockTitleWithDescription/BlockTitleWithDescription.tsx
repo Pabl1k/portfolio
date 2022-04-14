@@ -1,15 +1,23 @@
-import React, { FC } from "react";
+import React, {FC} from "react";
+import {RefType} from "../../types/state";
 import "./BlockTitleWithDescription.scss";
 
 type Props = {
   title: string;
   description: string;
+  blockRef?: RefType;
 };
 
-const BlockTitleWithDescription: FC<Props> = ({ title, description }) => {
+const BlockTitleWithDescription: FC<Props> = ({
+  title,
+  description,
+  blockRef,
+}) => {
   return (
     <div className="block-title-with-description">
-      <span className="block-title-with-description__title">{title}</span>
+      <span className="block-title-with-description__title" ref={blockRef}>
+        {title}
+      </span>
       <span className="block-title-with-description__description portfolio-text-small">
         {description}
       </span>
@@ -18,4 +26,3 @@ const BlockTitleWithDescription: FC<Props> = ({ title, description }) => {
 };
 
 export default BlockTitleWithDescription;
-

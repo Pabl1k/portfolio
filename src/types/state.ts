@@ -1,4 +1,5 @@
 import { IconName } from "../components/Icon/Icon";
+import {MutableRefObject} from "react";
 
 export type ProfileStateType = {
   socialNetwork: IconName;
@@ -42,7 +43,4 @@ export type ProjectsStateType = {
   github: `https://${string}`;
 };
 
-export type RightContainerStateType = {
-  name: IconName;
-  Y: number;
-};
+export type RefType = MutableRefObject<HTMLDivElement | null>

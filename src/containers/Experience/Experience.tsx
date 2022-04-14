@@ -1,18 +1,28 @@
 import React, { FC } from "react";
 import BlockTitleWithDescription from "../../components/BlockTitleWithDescription/BlockTitleWithDescription";
-import { ExperienceStateType } from "../../types/state";
+import { ExperienceStateType, RefType } from "../../types/state";
 import "./Experience.scss";
 
 type Props = {
   state: ExperienceStateType[];
   title: string;
   description: string;
+  experienceRef: RefType;
 };
 
-const Experience: FC<Props> = ({ state, title, description }) => {
+const Experience: FC<Props> = ({
+  state,
+  title,
+  description,
+  experienceRef,
+}) => {
   return (
     <>
-      <BlockTitleWithDescription title={title} description={description} />
+      <BlockTitleWithDescription
+        title={title}
+        description={description}
+        blockRef={experienceRef}
+      />
       <div className="experience">
         {state.map((job, i) => {
           return (

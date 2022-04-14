@@ -1,16 +1,22 @@
-import React from "react";
+import React, { FC } from "react";
 import BlockTitleWithDescription from "../../components/BlockTitleWithDescription/BlockTitleWithDescription";
 import Icon from "../../components/Icon/Icon";
 import { state } from "../../utils/state";
 import { strings } from "../../utils/strings";
+import { RefType } from "../../types/state";
 import "./Stack.scss";
 
-const Stack = () => {
+type Props = {
+  stackRef: RefType;
+};
+
+const Stack: FC<Props> = ({ stackRef }) => {
   return (
     <>
       <BlockTitleWithDescription
         title={strings.myStack}
         description={strings.stackDescription}
+        blockRef={stackRef}
       />
       <div className="stack">
         <div className="stack__container">

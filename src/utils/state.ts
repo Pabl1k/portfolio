@@ -3,11 +3,10 @@ import {
   InformationStateType,
   ProfileStateType,
   ProjectsStateType,
-  RightContainerStateType,
   ScaleStateType,
   StackStateType,
 } from "../types/state";
-import { strings } from "./strings";
+import {strings} from "./strings";
 
 export const state = {
   profile: [
@@ -128,12 +127,4 @@ export const state = {
       github: "https://github.com/Pabl1k/portfolio",
     },
   ] as ProjectsStateType[],
-  rightContainer: [
-    { name: "home", Y: 0 },
-    { name: "stack", Y: 555 },
-    { name: "work", Y: 1280 },
-    { name: "education", Y: 1924 },
-    { name: "projects", Y: 2468 },
-    { name: "feedback", Y: 4009 },
-  ] as RightContainerStateType[],
 };

@@ -22,7 +22,7 @@
   &__description {
     color: var(--color--grey-text);
     text-align: center;
-    width: 25rem;
+    width: 23rem;
 
     @include if-mobile {
       width: 20rem;

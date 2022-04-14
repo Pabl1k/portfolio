@@ -1,17 +1,22 @@
-import React from "react";
+import React, {FC} from "react";
 import BlockTitleWithDescription from "../../components/BlockTitleWithDescription/BlockTitleWithDescription";
-import { useMobileScreen, useTabletScreen } from "../../hooks/useMediaQuery";
-import { strings } from "../../utils/strings";
-import { state } from "../../utils/state";
+import {useMobileScreen, useTabletScreen} from "../../hooks/useMediaQuery";
+import {strings} from "../../utils/strings";
+import {state} from "../../utils/state";
 import Coingate from "../../assets/images/coingate.png";
 import EmailPage from "../../assets/images/emailPage.png";
 import TodoList from "../../assets/images/todoList.png";
 import UserChat from "../../assets/images/userChat.png";
 import CardsLearning from "../../assets/images/cardsLearning.png";
 import ThisPortfolio from "../../assets/images/thisPortfolio.png";
+import {RefType} from "../../types/state";
 import "./Projects.scss";
 
-const Projects = () => {
+type Props = {
+  projectsRef: RefType;
+};
+
+const Projects: FC<Props> = ({ projectsRef }) => {
   const isMobile = useMobileScreen();
   const isTablet = useTabletScreen();
 
@@ -20,6 +25,7 @@ const Projects = () => {
       <BlockTitleWithDescription
         title={strings.projects}
         description={strings.projectsDescription}
+        blockRef={projectsRef}
       />
       <div className="projects">
         {state.projects.map((state, i) => {
