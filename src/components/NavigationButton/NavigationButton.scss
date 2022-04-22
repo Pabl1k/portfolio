@@ -24,6 +24,10 @@
     transform: rotate(-45deg);
   }
 
+  &__button-name {
+    text-transform: capitalize;
+  }
+
   &__button {
     background-color: var(--color--light-grey);
     border-radius: 50%;

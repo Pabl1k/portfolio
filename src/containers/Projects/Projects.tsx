@@ -42,7 +42,7 @@ const Projects: FC<Props> = ({ projectsRef }) => {
                   {state.label}
                 </div>
               )}
-              <a href={state.url} target="_blank">
+              <a href={state.github} target="_blank" title={strings.openGithub}>
                 <img
                   src={
                     (state.img === "Coingate" && Coingate) ||

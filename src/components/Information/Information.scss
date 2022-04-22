@@ -17,6 +17,17 @@
 
     &.key {
       background-color: var(--color--gold);
+
+      &::-moz-selection {
+        /* for Firefox */
+        background: #3535ff;
+        color: #000;
+      }
+
+      &::selection {
+        background: #3535ff;
+        color: #000;
+      }
     }
 
     &.available {

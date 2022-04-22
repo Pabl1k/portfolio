@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import { useStartWithCapital } from "../../hooks/useStartWithCapital";
 import Icon, { IconName } from "../Icon/Icon";
 import "./NavigationButton.scss";
 
@@ -10,22 +9,29 @@ type Props = {
 };
 
 const NavigationButton: FC<Props> = ({ icon, onClick, isActive }) => {
-  const buttonName = useStartWithCapital(icon);
-  const isWorkIcon = icon === "work";
+  const iconSize = (icon: string): "24" | "22" | "18" => {
+    if (icon === "work") {
+      return "24";
+    } else if (icon === "about") {
+      return "22";
+    } else {
+      return "18";
+    }
+  };
   return (
     <div className="navigation-button">
       {isActive && (
         <div className="navigation-button__title portfolio-disable-text-selection">
           <div className="navigation-button__triangle" />
-          <span>{buttonName}</span>
+          <span className="navigation-button__button-name">{icon}</span>
         </div>
       )}
       <button
         className={`navigation-button__button ${isActive && "active"}`}
-        title={isActive ? "" : buttonName}
+        title={isActive ? undefined : icon}
         onClick={isActive ? () => {} : onClick}
       >
-        <Icon name={icon} height={isWorkIcon ? "24": "18"} width={isWorkIcon ? "24": "18"} />
+        <Icon name={icon} height={iconSize(icon)} width={iconSize(icon)} />
       </button>
     </div>
   );

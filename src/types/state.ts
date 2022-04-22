@@ -30,7 +30,6 @@ export type ExperienceStateType = {
 
 export type ProjectsStateType = {
   name: string;
-  url: `https://${string}`;
   img:
     | "Coingate"
     | "EmailPage"

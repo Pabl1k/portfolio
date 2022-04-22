@@ -6,7 +6,7 @@ import {
   ScaleStateType,
   StackStateType,
 } from "../types/state";
-import {strings} from "./strings";
+import { strings } from "./strings";
 
 export const state = {
   profile: [
@@ -85,35 +85,30 @@ export const state = {
   projects: [
     {
       name: strings.cryptoName,
-      url: "https://crypto-calculators.herokuapp.com/",
       img: "Coingate",
       description: strings.cryptoDescription,
       github: "https://github.com/Pabl1k/currencyCalculator",
     },
     {
       name: strings.emailPageName,
-      url: "https://my-email-page.herokuapp.com/",
       img: "EmailPage",
       description: strings.emailPageDescription,
       github: "https://github.com/Pabl1k/emailPage",
     },
     {
       name: strings.todoListName,
-      url: "https://i-have-what-to-do.herokuapp.com/",
       img: "TodoList",
       description: strings.todoListDescription,
       github: "https://github.com/Pabl1k/todo-list",
     },
     {
       name: strings.userChatName,
-      url: "",
       img: "UserChat",
       description: strings.userChatDescription,
       github: "https://github.com/Pabl1k/user-chat",
     },
     {
       name: strings.learnCardsName,
-      url: "https://pabl1k.github.io/cardsLearning/",
       img: "CardsLearning",
       description: strings.learnCardsDescription,
       label: strings.teamWork,
@@ -121,7 +116,6 @@ export const state = {
     },
     {
       name: strings.thisPortfolio,
-      url: "",
       img: "ThisPortfolio",
       description: strings.thisPortfolioDescription,
       github: "https://github.com/Pabl1k/portfolio",
