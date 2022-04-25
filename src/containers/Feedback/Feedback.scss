@@ -1,4 +1,9 @@
 .feedback {
   display: flex;
   flex-direction: column;
+
+  &.mobile {
+    flex-direction: row;
+    overflow-x: scroll;
+  }
 }

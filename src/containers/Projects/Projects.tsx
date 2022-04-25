@@ -1,15 +1,15 @@
-import React, {FC} from "react";
+import React, { FC } from "react";
 import BlockTitleWithDescription from "../../components/BlockTitleWithDescription/BlockTitleWithDescription";
-import {useMobileScreen, useTabletScreen} from "../../hooks/useMediaQuery";
-import {strings} from "../../utils/strings";
-import {state} from "../../utils/state";
+import { useMobileScreen, useTabletScreen } from "../../hooks/useMediaQuery";
+import { strings } from "../../utils/strings";
+import { state } from "../../utils/state";
 import Coingate from "../../assets/images/coingate.png";
 import EmailPage from "../../assets/images/emailPage.png";
 import TodoList from "../../assets/images/todoList.png";
 import UserChat from "../../assets/images/userChat.png";
 import CardsLearning from "../../assets/images/cardsLearning.png";
 import ThisPortfolio from "../../assets/images/thisPortfolio.png";
-import {RefType} from "../../types/state";
+import { RefType } from "../../types/state";
 import "./Projects.scss";
 
 type Props = {
@@ -42,7 +42,12 @@ const Projects: FC<Props> = ({ projectsRef }) => {
                   {state.label}
                 </div>
               )}
-              <a href={state.github} target="_blank" title={strings.openGithub}>
+              <a
+                href={state.github}
+                target="_blank"
+                title={strings.openGithub}
+                rel="noreferrer"
+              >
                 <img
                   src={
                     (state.img === "Coingate" && Coingate) ||
@@ -65,6 +70,7 @@ const Projects: FC<Props> = ({ projectsRef }) => {
                 className="projects__github portfolio-text-small"
                 href={state.github}
                 target="_blank"
+                rel="noreferrer"
               >
                 {strings.openGithub}
               </a>

@@ -3,6 +3,7 @@ import { ReactSVG } from "react-svg";
 
 export type IconName =
   | "about"
+  | "arrowUp"
   | "cross"
   | "css"
   | "download"

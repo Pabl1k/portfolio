@@ -9,7 +9,12 @@ type Props = {
 
 const IconButton: FC<Props> = ({ iconName, path }) => {
   return (
-    <a className="circle-with-icon" href={path} target="_blank">
+    <a
+      className="circle-with-icon"
+      href={path}
+      target="_blank"
+      rel="noreferrer"
+    >
       <Icon name={iconName} height="20" width="20" />
     </a>
   );

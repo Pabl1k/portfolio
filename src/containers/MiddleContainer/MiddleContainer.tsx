@@ -6,6 +6,7 @@ import Feedback from "../Feedback/Feedback";
 import Projects from "../Projects/Projects";
 import Footer from "../../components/Footer/Footer";
 import MenuButton from "../../components/MenuButton/MenuButton";
+import MobileScrollToTop from "../../components/MobileScrollToTop/MobileScrollToTop";
 import { useTabletScreen } from "../../hooks/useMediaQuery";
 import { strings } from "../../utils/strings";
 import { state } from "../../utils/state";
@@ -36,6 +37,7 @@ const MiddleContainer: FC<Props> = ({
   return (
     <div className="middle-container">
       {isTablet && <MenuButton icon="menu" onClick={onMenuClick} />}
+      {isTablet && <MobileScrollToTop />}
       <About />
       <Stack stackRef={stackRef} />
       <Experience
