@@ -13,4 +13,23 @@
     filter: brightness(85%);
     padding-bottom: spacing("6xs");
   }
+
+  &__qr {
+    position: absolute;
+    background: url("../../assets/images/tgQR.jpg") no-repeat;
+    background-size: 100% 100%;
+    width: 12.5rem;
+    height: 12.5rem;
+    margin: 4rem 0 0 4.5rem;
+  }
+
+  &__qr-arrow {
+    background-color: #fff;
+    bottom: calc(100% - 0.625rem);
+    height: spacing("md");
+    position: absolute;
+    left: calc(50% - 0.625rem);
+    transform: rotate(45deg);
+    width: spacing("md");
+  }
 }
