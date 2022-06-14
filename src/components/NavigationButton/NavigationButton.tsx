@@ -18,6 +18,11 @@ const NavigationButton: FC<Props> = ({ icon, onClick, isActive }) => {
       return "18";
     }
   };
+
+  const startWithCapital = (value: string) => {
+    return `${value[0].toUpperCase()}${value.slice(1)}`;
+  };
+
   return (
     <div className="navigation-button">
       {isActive && (
@@ -28,7 +33,7 @@ const NavigationButton: FC<Props> = ({ icon, onClick, isActive }) => {
       )}
       <button
         className={`navigation-button__button ${isActive && "active"}`}
-        title={isActive ? undefined : icon}
+        title={isActive ? undefined : startWithCapital(icon)}
         onClick={isActive ? () => {} : onClick}
       >
         <Icon name={icon} height={iconSize(icon)} width={iconSize(icon)} />

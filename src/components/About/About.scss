@@ -2,7 +2,7 @@
 
 .about {
   background: url("../../assets/images/aboutBg.png") no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   padding-left: 3.75rem;
   padding-bottom: 5rem;
 
@@ -22,15 +22,16 @@
 
   &__name-container {
     margin-top: 5.8rem;
-    max-width: 31.25rem;
+    width: 31vw;
 
     @include if-tablet-mini {
       margin-top: 3rem;
-      max-width: 25rem;
+      width: 25rem;
     }
 
     @include if-mobile {
       margin-top: 2rem;
+      display: contents;
     }
   }
 
@@ -59,7 +60,7 @@
     color: var(--color--grey-text);
     font-size: font-size("sm");
     margin-top: spacing("xs");
-    width: 25rem;
+    width: 26vw;
 
     @include if-tablet-mini {
       font-size: font-size("xs");
@@ -69,6 +70,7 @@
     }
 
     @include if-mobile {
+      font-size: font-size("sm");
       text-align: center;
       display: flow-root;
       width: auto;

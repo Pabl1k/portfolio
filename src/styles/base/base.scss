@@ -1,5 +1,10 @@
 #root {
   background-color: #c7c7c7;
+  padding: 0 2.5vw;
+
+    @media screen and (max-width: 820px) {
+      padding: 0;
+  }
 
   --color--black: #18191b;
   --color--main-black: #252627;
@@ -11,9 +16,9 @@
   --color--green: #7eb942;
   --color--blue: #3535ff;
 
-
   --size--small-icon: 2.5rem;
 
-  --size--item-width: 13.75rem;
-  --size--middle-container-width: 60.625rem;
+  --size--left-container-width: 19.5vw;
+  --size--middle-container-width: 63vw;
+  --size--right-container-width: 7vw;
 }

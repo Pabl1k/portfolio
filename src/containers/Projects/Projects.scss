@@ -19,18 +19,27 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    max-width: 29.3rem;
+    max-width: 31vw;
     padding-bottom: spacing("xs");
+
+    @include if-tablet-mini {
+      max-width: 35rem;
+    }
 
     img {
       height: 16rem;
-      width: 29.3rem;
+      width: 31vw;
       opacity: 0.9;
       transition: transform 0.5s;
 
       &:hover {
         opacity: 1;
         transform: scale(1.03);
+      }
+
+      @include if-tablet-mini {
+        height: 20rem;
+        width: 35rem;
       }
 
       @include if-mobile {

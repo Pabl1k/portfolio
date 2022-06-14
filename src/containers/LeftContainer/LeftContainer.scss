@@ -5,9 +5,13 @@
   display: flex;
   flex-direction: column;
   padding: 0 spacing("2xl") spacing("lg") spacing("2xl");
-  max-width: 18.75rem;
+  width: var(--size--left-container-width);
+
+  @include if-tablet-mini {
+    width: 40%;
+  }
 
   @include if-mobile {
-    max-width: 100%;
+    width: 100%;
   }
 }
