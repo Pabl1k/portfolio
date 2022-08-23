@@ -6,7 +6,7 @@ const CVButton = () => {
   return (
     <a
       className="cv-button portfolio-disable-text-selection"
-      href="https://drive.google.com/file/d/1ypDnnj1-JPkI8xX5eomyUZ3TDGjMEtZ8/view?usp=sharing"
+      href="https://drive.google.com/file/d/1dZWAkIUaYvpXIpMreqq0dbRHkXf04eUn/view?usp=sharing"
       target="_blank"
       rel="noreferrer"
     >

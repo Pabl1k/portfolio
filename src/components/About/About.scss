@@ -23,6 +23,7 @@
   &__name-container {
     margin-top: 5.8rem;
     width: 31vw;
+    max-width: 31rem;
 
     @include if-tablet-mini {
       margin-top: 3rem;
