@@ -20,7 +20,7 @@ const LeftContainer: FC<Props> = ({ pageTopRef, onCrossClick }) => {
   const isTablet = useTabletScreen();
 
   return (
-    <div className="left-container" ref={pageTopRef}>
+    <nav className="left-container" ref={pageTopRef}>
       {isTablet && <MenuButton icon="cross" onClick={onCrossClick} />}
       <Profile />
       <Information />
@@ -34,7 +34,7 @@ const LeftContainer: FC<Props> = ({ pageTopRef, onCrossClick }) => {
       />
       <ExtraSkills />
       <CVButton />
-    </div>
+    </nav>
   );
 };
 

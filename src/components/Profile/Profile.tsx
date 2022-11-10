@@ -8,14 +8,22 @@ import "./Profile.scss";
 
 const Profile = () => {
   return (
-    <div className="profile">
-      <img src={avatar} alt="me" className="profile__img" />
+    <header className="profile">
+      <img
+        src={avatar}
+        alt={`${strings.fullName} image`}
+        title={`${strings.fullName}`}
+        loading="eager"
+        className="profile__img"
+        width="100"
+        height="100"
+      />
       <span className="profile__full-name portfolio-text-medium">
         {strings.fullName}
       </span>
-      <span className="profile__position portfolio-text-small">
+      <h2 className="profile__position portfolio-text-small">
         {strings.position}
-      </span>
+      </h2>
       <div className="profile__links-container">
         {state.profile.map((soc, i) => {
           return (
@@ -24,7 +32,7 @@ const Profile = () => {
         })}
       </div>
       <Underline />
-    </div>
+    </header>
   );
 };
 

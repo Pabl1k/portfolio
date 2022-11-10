@@ -19,6 +19,7 @@ const IconButton: FC<Props> = ({ iconName, path }) => {
   return (
     <>
       <a
+        title={iconName}
         className="circle-with-icon"
         href={path}
         target="_blank"

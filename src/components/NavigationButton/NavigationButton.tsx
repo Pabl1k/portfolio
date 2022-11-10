@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import Icon, { IconName } from "../Icon/Icon";
+import { startWithCapital } from "../../common/functions/startWithCapital";
 import "./NavigationButton.scss";
 
 type Props = {
@@ -17,10 +18,6 @@ const NavigationButton: FC<Props> = ({ icon, onClick, isActive }) => {
     } else {
       return "18";
     }
-  };
-
-  const startWithCapital = (value: string) => {
-    return `${value[0].toUpperCase()}${value.slice(1)}`;
   };
 
   return (

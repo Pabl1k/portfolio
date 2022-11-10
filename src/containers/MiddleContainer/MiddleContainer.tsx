@@ -2,7 +2,6 @@ import React, { FC } from "react";
 import About from "../../components/About/About";
 import Stack from "../Stack/Stack";
 import Experience from "../Experience/Experience";
-import Feedback from "../Feedback/Feedback";
 import Projects from "../Projects/Projects";
 import Footer from "../../components/Footer/Footer";
 import MenuButton from "../../components/MenuButton/MenuButton";
@@ -39,21 +38,23 @@ const MiddleContainer: FC<Props> = ({
       {isTablet && <MenuButton icon="menu" onClick={onMenuClick} />}
       {isTablet && <MobileScrollToTop />}
       <About />
-      <Stack stackRef={stackRef} />
-      <Experience
-        state={state.workHistory}
-        title={strings.workHistory}
-        description={strings.workHistoryDescription}
-        experienceRef={workRef}
-      />
-      <Experience
-        state={state.education}
-        title={strings.education}
-        description={strings.educationDescription}
-        experienceRef={educationRef}
-      />
-      <Projects projectsRef={projectsRef} />
-      <Feedback feedbackRef={feedbackRef} />
+      <main>
+        <Stack stackRef={stackRef} />
+        <Experience
+          state={state.workHistory}
+          title={strings.workHistory}
+          description={strings.workHistoryDescription}
+          experienceRef={workRef}
+        />
+        <Experience
+          state={state.education}
+          title={strings.education}
+          description={strings.educationDescription}
+          experienceRef={educationRef}
+        />
+        <Projects projectsRef={projectsRef} />
+        {/*<Feedback feedbackRef={feedbackRef} />*/}
+      </main>
       <Footer goToTopRef={pageTopRef} />
     </div>
   );

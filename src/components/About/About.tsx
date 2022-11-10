@@ -9,27 +9,36 @@ const About = () => {
   const isTablet = useTabletScreen();
 
   return (
-    <div className="about">
+    <header className="about">
       {isMobile && (
         <div className="about__me-img-container">
-          <img src={me} alt="me" />
+          <img
+            src={me}
+            alt={strings.fullName}
+            title={strings.fullName}
+            width="200"
+            height="300"
+          />
         </div>
       )}
       <div className="about__name-container">
-        <span className="about__text">
+        <h1
+          className="about__text"
+          title={`${strings.fullName} ${strings.position}`}
+        >
           {strings.im} {strings.fullName}{" "}
           <span className="about__text gold">
             {strings.position.slice(0, 9)}
           </span>{" "}
           {strings.position.slice(10)}
-        </span>
+        </h1>
       </div>
       <div
         className={`about__description ${!isTablet && "portfolio-text-small"}`}
       >
         {strings.about}
       </div>
-    </div>
+    </header>
   );
 };
 

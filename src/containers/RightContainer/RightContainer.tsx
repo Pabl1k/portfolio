@@ -33,7 +33,7 @@ const RightContainer: FC<Props> = ({
     { name: "work", ref: workRef },
     { name: "education", ref: educationRef },
     { name: "projects", ref: projectsRef },
-    { name: "feedback", ref: feedbackRef },
+    // { name: "feedback", ref: feedbackRef },
   ];
 
   const [selected, setSelected] = useState<number>(0);
@@ -44,6 +44,14 @@ const RightContainer: FC<Props> = ({
   };
   const currentScrollY = () => {
     setCurrentY(window.scrollY);
+  };
+
+  const refPosition = (ref: RefType) => {
+    if (ref.current) {
+      return ref.current.offsetTop - 150 < currentY;
+    }
+
+    return 0;
   };
 
   useEffect(() => {
@@ -57,29 +65,17 @@ const RightContainer: FC<Props> = ({
     if (stackRef.current && stackRef.current?.offsetTop - 150 > currentY) {
       setSelected(0);
     }
-    if (stackRef.current && stackRef.current?.offsetTop - 150 < currentY) {
+    if (refPosition(stackRef)) {
       setSelected(1);
     }
-    if (workRef.current && workRef.current?.offsetTop - 150 < currentY) {
+    if (refPosition(workRef)) {
       setSelected(2);
     }
-    if (
-      educationRef.current &&
-      educationRef.current?.offsetTop - 150 < currentY
-    ) {
+    if (refPosition(educationRef)) {
       setSelected(3);
     }
-    if (
-      projectsRef.current &&
-      projectsRef.current?.offsetTop - 150 < currentY
-    ) {
+    if (refPosition(projectsRef)) {
       setSelected(4);
-    }
-    if (
-      feedbackRef.current &&
-      feedbackRef.current?.offsetTop - 150 < currentY
-    ) {
-      setSelected(5);
     }
   }, [currentY]);
 
