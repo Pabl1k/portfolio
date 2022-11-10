@@ -9,6 +9,7 @@ import TodoList from "../../assets/images/todoList.png";
 import UserChat from "../../assets/images/userChat.png";
 import CardsLearning from "../../assets/images/cardsLearning.png";
 import ThisPortfolio from "../../assets/images/thisPortfolio.png";
+import DnDTodolist from "../../assets/images/DnDTodolist.jpg";
 import { RefType } from "../../types/state";
 import "./Projects.scss";
 
@@ -45,7 +46,6 @@ const Projects: FC<Props> = ({ projectsRef }) => {
               <a
                 href={state.github}
                 target="_blank"
-                title={strings.openGithub}
                 rel="noreferrer"
               >
                 <img
@@ -55,9 +55,14 @@ const Projects: FC<Props> = ({ projectsRef }) => {
                     (state.img === "TodoList" && TodoList) ||
                     (state.img === "UserChat" && UserChat) ||
                     (state.img === "CardsLearning" && CardsLearning) ||
-                    (state.img === "ThisPortfolio" && ThisPortfolio)
+                    (state.img === "ThisPortfolio" && ThisPortfolio) ||
+                    (state.img === "DnDTodolist" && DnDTodolist)
                   }
                   alt={state.name}
+                  title={`${state.name} - ${strings.openGithub}`}
+                  loading="lazy"
+                  width="500"
+                  height="300"
                 />
               </a>
               <span className="projects__title portfolio-text-medium">

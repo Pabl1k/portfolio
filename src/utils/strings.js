@@ -86,4 +86,6 @@ export const strings = {
   openGithub: "Open on GitHub",
   thisPortfolio: "This Portfolio",
   thisPortfolioDescription: "Stack: React, React-SVG, SCSS",
+  DnDTodolist: "Drag and Drop To Do List",
+  DnDTodolistDescription: "Stack: React, Webpack, Firebase, React-Firebase-Hooks"
 };

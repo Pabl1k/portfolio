@@ -36,7 +36,8 @@ export type ProjectsStateType = {
     | "TodoList"
     | "UserChat"
     | "CardsLearning"
-    | "ThisPortfolio";
+    | "ThisPortfolio"
+    | "DnDTodolist";
   description: string;
   label?: string;
   github: `https://${string}`;

@@ -115,6 +115,12 @@ export const state = {
       github: "https://github.com/Pabl1k/cardsLearning",
     },
     {
+      name: strings.DnDTodolist,
+      img: "DnDTodolist",
+      description: strings.DnDTodolistDescription,
+      github: "https://github.com/Pabl1k/DnD-Todolist",
+    },
+    {
       name: strings.thisPortfolio,
       img: "ThisPortfolio",
       description: strings.thisPortfolioDescription,
